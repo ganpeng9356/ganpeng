@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.yt.dao.RecordDao">
+    <resultMap type="com.yt.entity.Record" id="RecordResultMap">
+    <id column="rid" property="rid"/>
+    <result column="rtime" property="rtime"/>
+    <result column="rpice" property="rpice"/>
+    <result column="ccolor" property="ccolor"/>
+    <result column="cname" property="cname"/>
+    <result column="cweight" property="cweight"/>
+    <result column="cstate" property="cstate"/>
+    <result column="cimg" property="cimg"/>
+    <result column="croute" property="croute"/>
+    </resultMap>
+   <insert id="addRecord">
+   insert into record(ID,cid,rtime,rpice) values(#{ID},#{cid},#{rtime},#{rpice})
+   </insert>
+   <select id="selectRecord" resultMap="RecordResultMap" resultType="String">
+  SELECT * FROM record,commodity WHERE record.ID=#{ID} and commodity.cid=record.cid ;
+   </select>
+    </mapper>

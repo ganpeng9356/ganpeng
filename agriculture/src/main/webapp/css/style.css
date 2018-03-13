@@ -1,0 +1,496 @@
+#close{
+    background:url(../img/close.png) no-repeat;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    position:absolute;
+    right:5px;
+    top:15px;
+    text-indent:-999em;
+}
+#mask{
+    background-color:#ccc;
+    opacity:0.5;
+    filter: alpha(opacity=50);
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1000;
+}
+#login{
+    position:fixed;
+    z-index:1001;
+}
+.loginCon{
+    position:relative;
+    left: -400px;
+    width:670px;
+    height:380px;
+    background-color: #4d4d4d;
+    color: #9999FF;
+    /*background:url(img/loginBg.png) #2A2C2E center center no-repeat;*/
+}
+.project {
+    width: 360px;
+    padding: 5px; }
+
+.project-list:after {
+    content: " ";
+    display: block;
+    clear: both; }
+.project__image {
+    display: block;
+    position: relative; }
+.project__image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block; }
+.project__image:after {
+    content: " ";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+    transition: opacity .3s ease;
+    opacity: 0; }
+.project__card {
+    position: relative;
+    transition: box-shadow .3s ease;
+    box-shadow: 0 0px 0px transparent; }
+.project__card.hover-in {
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+.project__card.hover-out {
+    transition: -webkit-transform .2s ease-in;
+    transition: transform .2s ease-in;
+    transition: transform .2s ease-in, -webkit-transform .2s ease-in; }
+.project:hover .project__card {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.4); }
+.project:hover .project__image:after {
+    opacity: 1; }
+.project:hover .project__detail {
+    border-width: 3px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }
+.project:hover .project__title, .project:hover .project__category {
+    -webkit-transform: translateY(0) scale(1);
+    -ms-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+    opacity: 1; }
+.project:hover .project__title {
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1; }
+.project__detail {
+    position: absolute;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-transform: translateZ(200px);
+    transform: translateZ(200px);
+    border: 0 solid #00BCD4;
+    transition: border .4s ease;
+     width: 354px;
+    height: 280px;
+    top: 2px;
+}
+.project__title {
+    font-size: 36px;
+    font-weight: 500;
+    transition: .4s ease;
+    opacity: 0;
+    -webkit-transform: translateY(40px) scale(0);
+    -ms-transform: translateY(40px) scale(0);
+    transform: translateY(40px) scale(0);
+    will-change: transform; }
+.project__category {
+    opacity: 0;
+    transition: .4s ease;
+    transition-delay: .1s;
+    -webkit-transform: translateY(40px) scale(0);
+    -ms-transform: translateY(40px) scale(0);
+    transform: translateY(40px) scale(0);
+    will-change: transform;
+}
+.project__category a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.3em; }
+
+.icc:link{
+    color: #FFFFCC;
+}
+.icc:visited{
+    color: #99CCCC;
+}
+.icc:hover{
+    color: #FFFFCC;
+}
+.determine:link{
+    color: #FF0000;
+}
+.determine:visited{
+    color: #CC6600;
+}
+.determine:hover{
+    color: #FFCC00;
+}
+
+/* 展示  */
+
+#freshcourse2{
+    position: relative;
+    left: 420px;
+    top: -315px;
+}
+#freshcourse2 ul {
+    list-style: none;
+    font-family: "微软雅黑";
+    overflow: hidden;
+}
+#freshcourse2 ul li, #freshcourse2 p, #freshcourse2 h5 {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+#freshcourse2 ul li {
+    float: left;
+    width: 370px;
+    background: #fff;
+    margin: 0 40px 21px 0;
+    padding-bottom: 10px;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 1px #ccc;
+}
+#freshcourse2 ul li:hover {
+    box-shadow: 0 3px 10px #999
+}
+#freshcourse2 ul li a:hover {
+    display: block;
+    overflow: hidden;
+}
+#freshcourse2 ul li a:hover h5 {
+    color: #c30;
+    /*color: #FF0000;*/
+    text-decoration: underline
+}
+
+#freshcourse2 ul li.mr0 {
+    margin-right: 0
+}
+#freshcourse2 ul li img {
+    border-bottom: 4px solid #c9394a;
+    margin: 10px 2px 0 2px;
+}
+#freshcourse2 h5 {
+    font-size: 18px;
+    color: #52585a;
+    padding: 0px 14px;
+    position: relative;
+    top: 2px;
+}
+
+#freshcourse2 .tips {
+    padding:0 14px;
+    font-size:12px;
+    color:#8e999d;
+    overflow:hidden;
+    zoom:1;
+}
+
+
+#freshcourse3{
+    position: relative;
+    top: -628px;
+    left: 830px;
+}
+#freshcourse3 ul {
+    list-style: none;
+    font-family: "微软雅黑";
+    overflow: hidden;
+}
+#freshcourse3 ul li, #freshcourse3 p, #freshcourse3 h5 {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+#freshcourse3 ul li {
+    float: left;
+    width: 370px;
+    background: #fff;
+    margin: 0 40px 21px 0;
+    padding-bottom: 10px;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 1px #ccc;
+}
+#freshcourse3 ul li:hover {
+    box-shadow: 0 3px 10px #999
+}
+#freshcourse3 ul li a:hover {
+    display: block;
+    overflow: hidden;
+}
+#freshcourse3 ul li a:hover h5 {
+    color: #c30;
+    /*color: #FF0000;*/
+    text-decoration: underline
+}
+#freshcourse3 ul li.mr0 {
+    margin-right: 0
+}
+#freshcourse3 ul li img {
+    border-bottom: 4px solid #c9394a;
+    margin: 10px 2px 0 2px;
+}
+#freshcourse3 h5 {
+    font-size: 18px;
+    color: #52585a;
+    padding: 0px 14px;
+    position: relative;
+    top: 2px;
+}
+#freshcourse3 .tips {
+    padding:0 14px;
+    font-size:12px;
+    color:#8e999d;
+    overflow:hidden;
+    zoom:1;
+}
+
+#freshcourse4{
+    position: relative;
+    top: -628px;
+    left: 830px;
+}
+#freshcourse4 ul {
+    list-style: none;
+    font-family: "微软雅黑";
+    overflow: hidden;
+}
+#freshcourse4 ul li, #freshcourse4 p, #freshcourse4 h5 {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+#freshcourse4 ul li {
+    float: left;
+    width: 370px;
+    background: #fff;
+    margin: 0 40px 21px 0;
+    padding-bottom: 10px;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 1px #ccc;
+}
+#freshcourse4 ul li:hover {
+    box-shadow: 0 3px 10px #999
+}
+#freshcourse4 ul li a:hover {
+    display: block;
+    overflow: hidden;
+}
+#freshcourse4 ul li a:hover h5 {
+    color: #c30;
+    /*color: #FF0000;*/
+    text-decoration: underline
+}
+#freshcourse4 ul li.mr0 {
+    margin-right: 0
+}
+#freshcourse4 ul li img {
+    border-bottom: 4px solid #c9394a;
+    margin: 10px 2px 0 2px;
+}
+#freshcourse4 h5 {
+    font-size: 18px;
+    color: #52585a;
+    padding: 0px 14px;
+    position: relative;
+    top: 2px;
+}
+
+#freshcourse4 .tips {
+    padding:0 14px;
+    font-size:12px;
+    color:#8e999d;
+    overflow:hidden;
+    zoom:1;
+}
+
+#freshcourse5{
+    position: relative;
+    top: -942px;
+    left: 42px;
+    width: 450px;
+    height: 300px;
+}
+#freshcourse5 ul {
+    list-style: none;
+    font-family: "微软雅黑";
+    overflow: hidden;
+}
+#freshcourse5 ul li, #freshcourse5 p, #freshcourse5 h5 {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+#freshcourse5 ul li {
+    float: left;
+    width: 370px;
+    background: #fff;
+    margin: 0 40px 21px 0;
+    padding-bottom: 10px;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 1px #ccc;
+}
+#freshcourse5 ul li:hover {
+    box-shadow: 0 3px 10px #999
+}
+#freshcourse5 ul li a:hover {
+    display: block;
+    overflow: hidden;
+}
+#freshcourse5 ul li a:hover h5 {
+    color: #c30;
+    /*color: #FF0000;*/
+    text-decoration: underline
+}
+#freshcourse5 ul li.mr0 {
+    margin-right: 0
+}
+#freshcourse5 ul li img {
+    border-bottom: 4px solid #c9394a;
+    margin: 10px 2px 0 2px;
+}
+#freshcourse5 h5 {
+    font-size: 18px;
+    color: #52585a;
+    padding: 0px 14px;
+    position: relative;
+    top: 2px;
+}
+#freshcourse5 .tips {
+    padding:0 14px;
+    font-size:12px;
+    color:#8e999d;
+    overflow:hidden;
+    zoom:1;
+}
+
+#freshcourse6{
+    position: relative;
+    top: -1240px;
+    left: -375px;
+    width: 450px;
+    height: 300px;
+}
+#freshcourse6 ul {
+    list-style: none;
+    font-family: "微软雅黑";
+    overflow: hidden;
+}
+#freshcourse6 ul li, #freshcourse6 p, #freshcourse6 h5 {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+#freshcourse6 ul li {
+    float: left;
+    width: 370px;
+    background: #fff;
+    margin: 0 40px 21px 0;
+    padding-bottom: 10px;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 1px #ccc;
+}
+#freshcourse6 ul li:hover {
+    box-shadow: 0 3px 10px #999
+}
+#freshcourse6 ul li a:hover {
+    display: block;
+    overflow: hidden;
+}
+#freshcourse6 ul li a:hover h5 {
+    color: #c30;
+    /*color: #FF0000;*/
+    text-decoration: underline
+}
+#freshcourse6 ul li.mr0 {
+    margin-right: 0
+}
+#freshcourse6 ul li img {
+    border-bottom: 4px solid #c9394a;
+    margin: 10px 2px 0 2px;
+}
+#freshcourse6 h5 {
+    font-size: 18px;
+    color: #52585a;
+    padding: 0px 14px;
+    position: relative;
+    top: 2px;
+}
+#freshcourse6 .tips {
+    padding:0 14px;
+    font-size:12px;
+    color:#8e999d;
+    overflow:hidden;
+    zoom:1;
+}
+
+#bg02{
+    position: absolute;
+    top: -600px;
+    left: -100px;
+}
+#bg03{
+    position: absolute;
+    top: -1200px;
+    left: -100px;
+}
+.catalog{
+    position: absolute;
+    left: -30px;
+}
+.catalog a:hover{
+    background-color:#23262E;
+    width: 70px;
+    height: 35px;
+}
+.imgLi{
+    width: 120%;
+    height: 600px;
+}
+#error{
+    position: absolute;
+    color:#FF0000;
+    font-family: '微软雅黑';
+    font-size: 17px;
+    /*background-color: #b2e2fa;*/
+    top: 60px;
+    left: 1130px;
+    width: 200px;
+    height: 200px;
+}

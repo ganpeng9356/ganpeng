@@ -1,0 +1,143 @@
+#li5{
+    position: absolute;
+    top: 13px;
+    left: 950px;
+    width: 100px;
+}
+#li5a{
+    color: #8c969a;
+    font-size: 16px;
+    width: 150px;
+}
+.form1 {
+    position: absolute;
+    top: 130px;
+    left: 750px;
+}
+
+#int {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #1a1a1a;
+    border-radius: 9px;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-size: 16px;
+    padding-left: 3px;
+}
+
+#sub {
+    background-color: #00FF99;
+    width: 40px;
+    height: 30px;
+    border-radius: 6px;
+    color: #F0F8FF;
+}
+#img1{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 500px;
+    height: 500px;
+}
+#img2{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 500px;
+    height: 500px;
+}
+#img3{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 500px;
+    height: 500px;
+}
+#lan{
+    color: #1a1a1a;
+    position: relative;
+    top: 140px;
+    left: 530px;
+}
+#span1{
+    color: #3c3c3c;
+    position: absolute;
+    top: 90px;
+    left: 700px;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+}
+.mytable {
+    width: 700px;
+    padding: 0;
+    margin: 0;
+}
+
+caption {
+    padding: 0 0 5px 0;
+    width: 700px;
+    font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#8c969a;
+}
+
+th {
+    font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    border-right: 1px solid #C1DAD7;
+    border-bottom: 1px solid #C1DAD7;
+    border-top: 1px solid #C1DAD7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 6px 6px 12px;
+    background: #CAE8EA no-repeat;
+    text-align: center;
+}
+
+th.nobg {
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid #C1DAD7;
+    background: none;
+}
+
+td {
+    border-right: 1px solid #C1DAD7;
+    border-bottom: 1px solid #C1DAD7;
+    background: #fff;
+    font-size:11px;
+    padding: 6px 6px 6px 12px;
+    color: #4f6b72;
+    text-align: center;
+}
+
+
+td.alt {
+    background: #F5FAFA;
+    color: #797268;
+}
+
+th.spec {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #fff no-repeat;
+    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+th.specalt {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #f5fafa no-repeat;
+    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #797268;
+}
+#xin{
+    position: absolute;
+    z-index: 999;
+    left: 1150px;
+    font-size: 17px;
+    font-weight: 600;
+    top: 70px;
+    color: #be2924;
+}

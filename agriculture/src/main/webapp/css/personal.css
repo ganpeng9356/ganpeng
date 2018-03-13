@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: url("../img/beijng.jpg");
+}
+#li5{
+    position: absolute;
+    top: 13px;
+    left: 950px;
+    width: 150px;
+}
+#li5a{
+    color: #8c969a;
+    font-size: 16px;
+    width: 150px;
+}
+#touimg{
+    position: absolute;
+    top: -20px;
+    left: -5px;
+    max-height: 130px;
+}
+#tabid{
+    position: absolute;
+    width: 10%;
+    height: 500px;
+    top: 90px;
+    left: 50px;
+    text-align: center;
+}
+
+#tabid th{
+    text-align: center;
+    background-color: powderblue;
+    font-family:"微软雅黑";
+    font-size: 16px;
+    font-weight: bold;
+}
+#tabid td{
+    text-align: center;
+    background-color: gainsboro;
+    font-family:"微软雅黑";
+    font-size: 16px;
+    font-weight: 500;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+#right1,#right2,#right3,#right4,#right5,#right6,#right7{
+    width: 900px;
+    height: 530px;
+    border: solid 1px black;
+    position: absolute;
+    top:80px;
+    left: 23%;
+    box-shadow: 10px 20px 5px #808080;
+}
+#right1 p{
+    font-size: 16px;
+    font-family:"微软雅黑";
+    font-weight: 500;
+}
+#right1 div{
+    width: 700px;
+    position: relative;
+    left: 10%;
+    top:20px;
+}
+#right1 div span{
+    font-size: 20px;
+    font-weight: bold;
+}
+#right1 .d1{
+    position: relative;
+    left: 150px;
+    top: 50px;
+
+}
+#right2{
+    font-size: 17px;
+    font-family:"微软雅黑" ;
+}
+#right2 .d1{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 20%;
+    top:20px;
+    box-shadow:0px 0px  10px 5px #aaa;
+    background-color: palegoldenrod;
+    border-radius: 10px;
+}
+#right2 .d2{
+    width: 320px;
+    height: 400px;
+    position: relative;
+    left: 18%;
+    top:30px;
+}
+#right2 div div form{
+    position: relative;
+    left: 0px;
+    top: -25px;
+    bottom: 9%;
+}
+#right2 div div .inp{
+    position: relative;
+    bottom: 35px;
+}
+#sub{
+    position: relative;
+    left: 100px;
+    width: 75px;
+    height: 20px;
+}
+#divTab{
+    position: relative;
+    top: 100px;
+    left: 300px;
+}
+th{
+    background-color: #C1DAD7
+}
+td{
+    background-color: #fff;
+}
+td,th{
+    text-align: center;
+}

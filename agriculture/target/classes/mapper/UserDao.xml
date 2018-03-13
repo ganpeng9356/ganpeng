@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.yt.dao.UserDao">
+    <resultMap type="com.yt.entity.User" id="UserResultMap">
+    <id column="userid" property="userid"/>
+    <result column="ID" property="ID"/>
+    <result column="uname" property="uname"/>
+    <result column="uaddress" property="uaddress"/>
+    <result column="utel" property="utel"/>
+    <result column="ubirth" property="ubirth"/>
+    <result column="usex" property="usex"/>
+    <result column="uemail" property="uemail"/>
+    </resultMap>
+    <insert id="addUser">
+		<!-- 具体的sql -->
+		insert into tbl_user(ID,uname,upwd,usex,utel) values(#{ID},#{uname},#{upwd},#{usex},#{utel})
+	</insert>
+	<select id="selectUser" resultType="int">
+	 select * from tbl_user where uname=#{uname} and upwd=#{upwd}
+	</select>
+	
+	<select id="inUser" resultMap="UserResultMap" resultType="String">
+	select * from tbl_user where uname=#{uname}
+	</select>
+	
+	<update id="modifyUser">
+	update tbl_user set uaddress=#{user.uaddress},ubirth=#{user.ubirth},uemail=#{user.uemail} where uname=#{uname}
+	</update>
+	
+	
+    </mapper>

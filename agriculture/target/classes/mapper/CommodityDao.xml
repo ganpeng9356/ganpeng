@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.yt.dao.CommodityDao">
+    <resultMap type="com.yt.entity.Commodity" id="CommodityResultMap">
+    <id column="cid" property="cid"/>
+    <result column="cname" property="cname"/>
+    <result column="cprice" property="cprice"/>
+    <result column="ccolor" property="ccolor"/>
+    <result column="cplace" property="cplace"/>
+    <result column="cimg" property="cimg"/>
+    <result column="croute" property="croute"/>
+    <result column="cweight" property="cweight"/>
+    <result column="purchaseNumber" property="purchaseNumber"/>
+    </resultMap>
+    <insert id="addCommodity">
+		<!-- 具体的sql -->
+		insert into commodity(cname,cprice,cweight,ccolor,cplace,cimg,croute,cstate)
+		values(#{cname},#{cprice},#{cweight},#{ccolor},#{cplace},#{cimg},#{croute},#{cstate})
+	</insert>
+	
+	<select id="selectCommodity" resultMap="CommodityResultMap" >
+	select * from commodity where cstate=1
+	</select>
+	
+	<select id="commodityAsses" resultMap="CommodityResultMap">
+	select * from commodity where cname=#{cname}
+	</select>
+	<update id="updateCommodity" parameterType="int">
+	update commodity set cstate=0 where cid=#{cid}
+	</update>
+    </mapper>

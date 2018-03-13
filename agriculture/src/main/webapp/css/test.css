@@ -1,0 +1,103 @@
+#name{
+border: 2px solid #CCCC99;
+    opacity: 0.5;
+    width: 315px;
+    height: 38px;
+}
+#span2{
+    position: absolute;
+    top: 26%;
+    left: 6%;
+}
+#pwd{
+    opacity: 0.5;
+    width: 315px;
+    height: 38px;
+    font-size: 20px;
+}
+#span3{
+    position:absolute;
+    top: 45%;
+    left: 6%;
+}
+#span4{
+    position:absolute;
+    top: 65%;
+    left: 20%;
+}
+#span5{
+    position:absolute;
+    top: 65%;
+    left: 35%;
+}
+#span6{
+    position:absolute;
+    top: 17%;
+    left: 70%;
+}
+#span7{
+    position:absolute;
+    top:27%;
+    left: 65%;
+    width: 10px;
+    height: 60px;
+}
+#span8{
+    position:absolute;
+    top:43%;
+    left: 65%;
+    width: 10px;
+    height: 60px;
+}
+#span9{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+}
+#span10{
+    position: relative;
+    top: -4px;
+}
+#span9_check{
+    width: 17px;
+    height: 17px;
+}
+#logina{
+    position: relative;
+    top: 65%;
+    width: 500px;
+    height: 150px;
+    left: 30px;
+    color:#000033;
+    background-color: #a1a6a9;
+}
+.logins{
+    width: 70px;
+    height: 30px;
+    background-color: #009933;
+    color: #daddde;
+}
+.register{
+    font-family: '微软雅黑';
+    width: 60px;
+    height: 30px;
+    background: #c5c5c5;
+    padding-bottom: 25px;
+    text-align: center;
+    display: block;
+    line-height: 32px;
+    font-size: 14px;
+    opacity: .9;
+    text-decoration: none;
+    color: #0f0f11;
+    cursor: pointer;
+    position: relative;
+}
+.fram{
+    height: 20px;
+    border-radius:9px;
+    border: 1px solid #8c969a;
+    outline: none;
+    font-size: 15px;
+    padding-left: 3px;
+}
